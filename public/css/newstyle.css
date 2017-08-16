@@ -4,6 +4,7 @@
     font-size: 30px;
     background-color: darkolivegreen;
     color: goldenrod;
+    font-family: Cambria;
 } 
 
 body {
@@ -15,4 +16,14 @@ body {
 	background-color: white;
     text-align: center;
     padding-block-start: 30px;
+}
+
+#form {
+    position: relative;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: white;
+    border: 5px solid black;
 }

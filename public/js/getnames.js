@@ -1,7 +1,4 @@
 function addinputFields(){
-    var span = document.createElement("span");
-    span.innerHTML = "<br>"
-
     var number = document.getElementById("student").value;
 
     document.getElementById("demo").innerHTML = "Enter names in the boxes below: <br>"
