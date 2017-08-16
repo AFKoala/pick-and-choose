@@ -14,6 +14,5 @@ function addinputFields(){
         input.name = "text" + i;
         input.id = "studentname";
         document.getElementById("demo").appendChild(input).value;
-        var submit = document.createElement("submit");
     }
 }
