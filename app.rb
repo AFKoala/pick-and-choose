@@ -5,9 +5,8 @@ get '/' do
     erb :home
 end
 
-get '/getname' do
-    erb :checkbox
+post '/getname' do
     puts "MADE IT TO GET /getname"
+    names = params[:names]
+    erb :checkbox, :locals=>{:names=>names}
 end
-
-# GET PAIRINGS TO WORK TONIGHT
