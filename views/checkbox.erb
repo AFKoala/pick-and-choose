@@ -3,6 +3,8 @@
 
 <html>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel ="stylesheet" href ="css/newstyle.css">
 
 	<head>
@@ -11,9 +13,11 @@
 
 	<body>
     	<div id="form">
-			<p>Check all that are acceptable.</p><br>
-			<input type="checkbox" value="<%names%>"><br>
-			<input type="submit" value="">
+			<form action="/checkbox">
+				<p>Check all that are acceptable.</p><br>
+				<input type="checkbox" name="goodpairs" value="<%=names%>"><br>
+				<input type="submit" value="These are good!">
+			</form>
 		</div>
 	</body>
 

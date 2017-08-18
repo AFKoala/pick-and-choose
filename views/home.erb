@@ -3,6 +3,8 @@
 
 <html>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel ="stylesheet" href ="css/newstyle.css">
 
 	<head>
@@ -18,11 +20,11 @@
             <input type="button" value="Add Name" onclick="randomPair()">
             <input type="submit" onclick="pairup.rb">
                 <script>
-                    function randomPair(){
+                    function randomPair(){                        document.getElementById("demo").innerHTML = "Enter names in the boxes below: <br>"
                         var input = document.createElement("input");
                         input.type = "text";
                         input.required = true;
-                        input.name = "names[]";
+                        input.name = "names";
                         input.id = "names";
                         document.body.appendChild(input);
                     }
