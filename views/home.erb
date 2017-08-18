@@ -13,14 +13,12 @@
 
 	<body>
         <div id="form">
-            <form>
-                How many names do you need to pair?<br>
-                <script src="../js/getnames.js"></script>
-                <input type="number" id="student" name="student" autofocus="autofocus" placeholder="Enter a number" required>
-                <input type="button" onclick="addinputFields()" name="Generate Fields" value="Generate Fields">
-                <p id="demo"></p>
+            <p>Click to add a field.</p>
+            <script src="js/getnames.js"></script>
+            <button onclick="randomPair()">New Name</button><br>
+            <form method="post" action="/getnames" id="">
+                
             </form>
-            <button type="submit">Ready to pair up?</button>
         </div>
 	</body>
 
