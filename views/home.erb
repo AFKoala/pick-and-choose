@@ -14,15 +14,16 @@
 	<body>
         <div id="form">
             <p>Click to add a field.</p>
-            <button onclick="randomPair()">New Name</button><br>
-            <form method="post" action="/getname" id="newNames">
-            <input type="submit" onclick="pairup.rb">
+            <form method="post" action="/getname">
+            <input type="button" value="Add Name" onclick="randomPair()">
+            <input type="submit">
                 <script>
                     function randomPair(){
                         var input = document.createElement("input");
                         input.type = "text";
                         input.required = true;
                         input.name = "names[]";
+                        input.id = "names";
                         document.body.appendChild(input);
                     }
                 </script><br>
